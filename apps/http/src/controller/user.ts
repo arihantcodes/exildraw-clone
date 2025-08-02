@@ -2,7 +2,7 @@ import { ApiResponse } from "../utils/apiresponse";
 import { ApiError } from "../utils/apierror";
 import { AsyncHandler } from "../utils/asynchandler";
 import { RequestHandler } from "express";
-import jwt from "jsonwebtoken"
+
 
 const Signupcontroller: RequestHandler = AsyncHandler(async (req, res) => {
   const { email, password } = req.body;
@@ -12,6 +12,8 @@ const Signupcontroller: RequestHandler = AsyncHandler(async (req, res) => {
   }
 
   //  todo create user in database
+
+
 
   const User = {
     email: "t@gmail.com",
